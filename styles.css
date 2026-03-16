@@ -1387,3 +1387,43 @@ body {
     padding: 0 6px;
   }
 }
+
+
+
+.splash-scroll{
+  position:absolute;
+  bottom:90px; 
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:50%;
+  width:64px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  color:white;
+  font-size:36px;
+  transition:0.3s;
+  animation:arrowMove 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowMove{
+  0%{ transform:translate(-50%,0); }
+  50%{ transform:translate(-40%,0); }
+  100%{ transform:translate(-50%,0); }
+}
+
+.splash-scroll:hover{
+  transform:translate(-40%,0) scale(1.1);
+  background:rgba(255,255,255,0.15);
+}
+
+@media (max-width: 640px) {
+  .splash-scroll {
+    bottom: 200px;
+  }
+}
