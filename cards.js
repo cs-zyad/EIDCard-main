@@ -103,7 +103,7 @@ async function downloadCard() {
   let fontSize = "70px";
 
   if (selectedIndex === 0) { // Blue Template
-    nameY = 918;
+    nameY = 935;
     nameColor = "#ffffff";
     fontSize = "58px";
     ctx.textAlign = "center";
